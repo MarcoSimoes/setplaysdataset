@@ -82,7 +82,18 @@ The possible playmodes are:
 The *Kick In* is like a *Throw In* in soccer but usng the feet instead of the hands. The *Pass* is specific rule of RoboCup Soccer Simulation 3D. It is a command used by players to get some time to perform a kick to pass the ball to a teammate.
 It is a transitory rule used to foster teams to perform more passes. When you see a circle around the ball in the same color of one of the teams, means that that team called a *Pass* command. 
 
-The selection of playmode are important to tell RoboViz where do you want it to reposition the game log to start your demonstration. For example, if you
-team BahiaRT with an offensive setplay and you see in Corner Kick in the list of playmodes, means that at least one offensive corner kick to BahiaRT helds in this match up to the current time. If you
-selecte the *Corner Kick BahiaRT* playmode, the RoboViz will go the game backwards to the instant where the last corner kick was played by BahiaRT.
-This reposition of the game log can be slow and the screen may seems to freeze, but it is not frozen. Just wait the game start to run again and you will see that the reposition is ok.
+![Choosing Team, Situation and Play mode][RVizNewOff]
+
+The selection of playmode is important to tell RoboViz where do you want it to reposition the game log to start your demonstration. For example, if you choose the
+team BahiaRT with an offensive setplay and you see the Corner Kick in the list of playmodes, it means that at least one offensive corner kick to BahiaRT was held in this match up to the current time. If you
+select the *Corner Kick BahiaRT* playmode, the RoboViz will go the game back to the instant where the last corner kick was played by BahiaRT.
+
+When you click on the *Play* button, the RoboViz will try to reposition your game log in the desired situation. 
+This reposition of the game log can be slow and the screen may seem to freeze, but it is not frozen. Just wait for the game to start to run again and you will see that the reposition is ok.
+When you see the game running again, click on the *Pause* button immediately. Now you can see the situation and check if it is when you want to start your demo. 
+Be careful if you choose the PlayOn playmode. The RoboViz will reposition the game very fast almost in the same situation when you clicked on the *Start a new demonstration* button.
+If the new position is not exactly where you want, you can use Logplayer to fast forward or backward the game up to the desired situation.
+It is very important to position the game in the correct frame we want to use as the start scene for the setplay you will recommend as a demonstration. 
+
+
+![Select players to new demo][RVizSelTeam]
