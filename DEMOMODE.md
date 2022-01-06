@@ -69,3 +69,20 @@ need to position the game in the initial point of the situation you want to reco
 The first step to setting up a new demonstration is selecting the team for which you will recommend this demo. The options are **MIRG** or **BahiaRT** in the example above.
 Select one team and then select if your demonstration is for an **offensive** or **defensive** setplay. An offensive setplay is defined when the team you have chosen owns the ball at the start of the setplay. Otherwise, the setplay is defensive.
 Be careful to make the correct choice because the toolkit can not check the consistency. The third selection is the playmode of the situation when your setplay will start. The selection box always will list the *PlayOn*, but the other options are dynamic. The RoboViz will collect them from the current game until the instant you have paused it to start a new demonstration. 
+
+The possible playmodes are:
+* PlayOn
+* Goal Kick
+* Corner Kick
+* Kick In
+* Pass
+* Kick Off
+* Free Kick
+
+The *Kick In* is like a *Throw In* in soccer but usng the feet instead of the hands. The *Pass* is specific rule of RoboCup Soccer Simulation 3D. It is a command used by players to get some time to perform a kick to pass the ball to a teammate.
+It is a transitory rule used to foster teams to perform more passes. When you see a circle around the ball in the same color of one of the teams, means that that team called a *Pass* command. 
+
+The selection of playmode are important to tell RoboViz where do you want it to reposition the game log to start your demonstration. For example, if you
+team BahiaRT with an offensive setplay and you see in Corner Kick in the list of playmodes, means that at least one offensive corner kick to BahiaRT helds in this match up to the current time. If you
+selecte the *Corner Kick BahiaRT* playmode, the RoboViz will go the game backwards to the instant where the last corner kick was played by BahiaRT.
+This reposition of the game log can be slow and the screen may seems to freeze, but it is not frozen. Just wait the game start to run again and you will see that the reposition is ok.
