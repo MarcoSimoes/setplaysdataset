@@ -9,7 +9,7 @@ This README would normally document whatever steps are necessary to get your app
 ### Requirements ###
 
 * Install **git** and **docker** in a modern Linux distribution.
-* Use of Docker Desktop in Windows 10 or + is also possible, but we haven't tested this setup.
+* Use of Docker Desktop in Windows 10 or + is also possible, but we haven't tested this setup. If you want to try using the toolkit in Windows, install and set up Docker Desktop, WSL2, and an X Server for Windows. 
 * Check if your computer uses an NVIDIA Graphic Card and install updated NVIDIA Drivers. Make sure your OS is really using your NVIDIA drivers.
 * Just update your graphic card drivers if you do not use an NVIDIA Graphic Card.
 
@@ -24,7 +24,11 @@ or
 >> ./setup.sh mesa
 
 
-If you use NVIDIA choose the first option. Other wise use *mesa* as argument.
+If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument.
+
+* If you are trying in a Windows 10 or + without an NVIDIA Graphics card, run *setup.cmd* in the Windows Powershell:
+
+>> setup.cmd
 
 
 ### Running the toolkit ###
@@ -33,3 +37,5 @@ If you use NVIDIA choose the first option. Other wise use *mesa* as argument.
 >> ./run.sh nvidia
 * For other systems:
 >>./run.sh mesa
+* For Windows systems without NVIDIA Graphics Cards, run in the Powershell:
+>> run.cmd
