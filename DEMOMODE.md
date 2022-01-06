@@ -5,6 +5,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 1. [Opening games logs](#markdown-header-opening-games-logs)
 2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
+4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -56,7 +57,11 @@ When you choose one file and click on the **Open** button, the RoboViz will load
 
 You can watch the game and use the RoboViz keyboard and mouse commands to control the camera. You can type the hotkey `F1` to see all the RoboViz commands. RoboViz exhibits a small **Logplayer** window, and you can use it
 to play/pause the game and advance forward or backward when it is paused. At the right end of this window, there is a box where you can adjust the
-log player speed. **This is not a video streaming tool!** It is a Log player which reproduces the simulation of the actual match held during the competitions.
+log player speed.
+
+![Using negative speed to fast backward][RVizPlayBack]
+
+**This is not a video streaming tool!** It is a Log player which reproduces the simulation of the actual match held during the competitions.
 Hence, don't expect RoboViz to perform like a video stream. If you try to go forward or backward too fast, it can crash or present strange behaviors. An option is adjusting the speed to a higher value (maximum is 10) to fast forward or a negative value (minimum is -10) to fast backward. **But do not use negative speeds if you type *space* in the keyboard to activate the trackball mode in the camera**. 
 
 ![Starting a new demonstration][RVizStartNew]
@@ -109,4 +114,12 @@ When all Teammates are selected, check the *Teammates selected* checkbox.
 
 ![Teammates Selected][RVizTeamSel]
 
+Now you can choose players from the opponent team. This step is optional, but opponent players can be essential to planning some defensive behaviors (e.g., marking) and feed the learning engine with more information to match the setplays with real situations during games. It is good to select the relevant opponent players for the initial situation you chose to start your setplay.
+The procedure to select opponent players is similar. Click on each player on the field and see their t-shirt numbers near the *Opponents selected* checkbox. When you are done, click on this check this checkbox.
+
+![Opponents Selected][RVizOppSel]
+
+Now you can click on the *Start demonstration* button to leave RoboViz and open **SPlanner** to create your setplay. Don't worry. When you finish your setplay, the toolkit will bring you back to RoboViz in the same scene you are now.
+
+## Creating an Offensive Setplay
 
