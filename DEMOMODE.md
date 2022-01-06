@@ -6,5 +6,5 @@
 
 ![Open a game file in RoboViz][RVizOpenFile]
 
-![Open a game file in RoboViz](/images/DemoMode-RViz1.png)
+
 
