@@ -1,10 +1,8 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* This repository contains scripts to set up and run the Docker Containers which launch BahiaRT's Setplays Learning from Demonstration Toolkit. The toolkit is a set of a fork of RoboViz 1.6.0 modified to support the Demonstration Model and a Fork of Strategy Planner (SPlanner) to support Demonstration Mode and new Behaviors and features.
+* This repository contains scripts to set up and run the *Docker Containers* which launch **BahiaRT's Setplays Learning from Demonstration Toolkit**. The toolkit is a set of a fork of RoboViz 1.6.0 modified to support the Demonstration Mode and a Fork of Strategy Planner (SPlanner) to support Demonstration Mode and new behaviors and features.
 
 ### Requirements ###
 
@@ -12,6 +10,16 @@ This README would normally document whatever steps are necessary to get your app
 * Use of Docker Desktop in Windows 10 or + is also possible, but we haven't tested this setup. If you want to try using the toolkit in Windows, install and set up Docker Desktop, WSL2, and an X Server for Windows. 
 * Check if your computer uses an NVIDIA Graphic Card and install updated NVIDIA Drivers. Make sure your OS is really using your NVIDIA drivers.
 * Just update your graphic card drivers if you do not use an NVIDIA Graphic Card.
+
+### Installing Docker in a Debian-based Linux distribution ###
+
+>> $ sudo apt-get update
+>>
+>> $ sudo apt-get install -y docker.io
+>>
+>> $ sudo gpasswd -a *{user-name}* docker
+
+**Replace *{user-name}* by your user name in the Linux system.**
 
 ### Setting up the toolkit ###
 
