@@ -1,6 +1,8 @@
 # BahiaRT's Setplays Learning from Demonstration Toolkit
 
+Here we describe most of the usage of the toolkit to crate demonstrations of setplays to a team of simulated humanoid robots. 
 
+1. [Opening games logs](#markdown-header-Opening-games-logs)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -29,6 +31,10 @@
 [SPDefensiveMarker]: /images/DemoMode-SPlanner13.png "Defensive Marker"
 [SPBecOwn]: /images/DemoMode-SPlanner14.png "BecomeOwner behavior"
 
+## Opening games logs
+
+When you run the container with this toolkit, as described in [README.md](/README.md),  you will see the initial screen of RoboViz running in demo mode.
+You can see this screen in the following image. You should click in the open file button.
 
 ![Open a game file in RoboViz][RVizOpenFile]
 
