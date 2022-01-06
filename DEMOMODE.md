@@ -3,6 +3,7 @@
 Here we describe most of the usage of the toolkit to crate demonstrations of setplays to a team of simulated humanoid robots. 
 
 1. [Opening games logs](#markdown-header-Opening-games-logs)
+2. [Starting a new demonstration](#markdown-header-Starting-a-new-demonstration)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -50,3 +51,4 @@ If you have time for this, you can also plan to watch all 19 matches and recomme
 
 When you choose one file and click in the **Open** button, the log will be loaded and the game will start playing automatically.
 
+## Starting a new demonstration
