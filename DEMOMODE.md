@@ -59,3 +59,13 @@ log player speed. **This is not a video streaming tool!** It is a Log player whi
 Hence, don't expect RoboViz to perform like a video stream. If you try to go forward or backward too fast, it can crash or present strange behaviors. An option is adjusting the speed to a higher value (maximum is 10) to fast forward or a negative value (minimum is -10) to fast backward. **But do not use negative speeds if you type *space* in the keyboard to activate the trackball mode in the camera**. 
 
 ![Starting a new demonstration][RVizStartNew]
+
+When you are watching a game and see any play performed by one of the teams that you think was not a good play for that situation, you **Start a new demonstration**. 
+Just press the last button in the **Logplayer** window and the RoboViz will pause the game and open the **Start a new demonstration** window. You do not
+need to position the game in the initial point of the situation you want to recommend a demonstration, before you click on the **Start a new demonstration** button. 
+
+![New Demonstration Window][RVizNewDemo]
+
+The first step to setting up a new demonstration is selecting the team for which you will recommend this demo. The options are **MIRG** or **BahiaRT** in the example above.
+Select one team and then select if your demonstration is for an **offensive** or **defensive** setplay. An offensive setplay is defined when the team you have chosen owns the ball at the start of the setplay. Otherwise, the setplay is defensive.
+Be careful to make the correct choice because the toolkit can not check the consistency. The third selection is the playmode of the situation when your setplay will start. The selection box always will list the *PlayOn*, but the other options are dynamic. The RoboViz will collect them from the current game until the instant you have paused it to start a new demonstration. 
