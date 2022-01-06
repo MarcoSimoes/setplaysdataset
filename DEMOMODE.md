@@ -34,21 +34,28 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 
 ## Opening games logs
 
-When you run the container with this toolkit, as described in [README.md](/README.md),  you will see the initial screen of RoboViz running in demo mode.
-You can see this screen in the following image. You should click in the open file button.
+When you run the container with this toolkit, as described in [README.md](/README.md),  you will see the initial screen of [RoboViz](https://github.com/magmaOffenburg/RoboViz) running in demo mode.
+You can see this screen in the following image. You should click on the open file button.
 
 ![Open a game file in RoboViz][RVizOpenFile]
 
-In the **Open** windows, you should navigate to the root of folders tree and select the games folder:
+In the **Open** windows, you should navigate to the root of the folders tree and select the games folder:
 
 ![Games folder][RVizGamesFolder]
 
-This folder is inside the container you have downloaded to your computer and it contains 19 games extracted from *RoboCup 2021 Worldwide competition* and *Portuguese RoboCup Open 2021*.
-Each games is split into two files: one for the 1st half and other for the 2nd half. You can choose any file to open. We ask you to choose randomly files and not in sequence to avoid a bias in the dataset.
-If you have time for this, you can also plan to watch all 19 matches and recommend several demonstrations for each match. 
+This folder is inside the container you have downloaded to your computer, and it contains 19 games extracted from *RoboCup 2021 Worldwide competition* and *Portuguese RoboCup Open 2021*.
+Each game splits into two files: one for the 1st half and the other for the 2nd half. You can choose any file to open. We ask you to select random files and not in sequence to avoid a bias in the dataset.
+If you have time for this, you can also plan to watch all 19 matches and recommend several demonstrations from each game. 
 
 ![Choose a game log][RVizGameLog]
 
-When you choose one file and click in the **Open** button, the log will be loaded and the game will start playing automatically.
+When you choose one file and click on the **Open** button, the RoboViz will load the log, and the game will start playing automatically.
 
 ## Starting a new demonstration
+
+You can watch the game and use the RoboViz keyboard and mouse commands to control the camera. You can type the hotkey `F1` to see all the RoboViz commands. RoboViz exhibits a small **Logplayer** window, and you can use it
+to play/pause the game and advance forward or backward when it is paused. At the right end of this window, there is a box where you can adjust the
+log player speed. **This is not a video streaming tool!** It is a Log player which reproduces the simulation of the actual match held during the competitions.
+Hence, don't expect RoboViz to perform like a video stream. If you try to go forward or backward too fast, it can crash or present strange behaviors. An option is adjusting the speed to a higher value (maximum is 10) to fast forward or a negative value (minimum is -10) to fast backward. **But do not use negative speeds if you type *space* in the keyboard to activate the trackball mode in the camera**. 
+
+![Starting a new demonstration][RVizStartNew]
