@@ -4,6 +4,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 
 1. [Opening games logs](#markdown-header-opening-games-logs)
 2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
+3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -95,5 +96,9 @@ Be careful if you choose the PlayOn playmode. The RoboViz will reposition the ga
 If the new position is not exactly where you want, you can use Logplayer to fast forward or backward the game up to the desired situation.
 It is very important to position the game in the correct frame we want to use as the start scene for the setplay you will recommend as a demonstration. 
 
+## Selecting players to a demonstration
+
+After positioning the game in the exact scene you want to use to start the setplay you will demonstrate, you need to choose which players will take part of your setplay. 
+You must choose players from the team you chose - we will call it *your team* - and you may choose players from the opponent team.
 
 ![Select players to new demo][RVizSelTeam]
