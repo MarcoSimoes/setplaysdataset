@@ -2,8 +2,8 @@
 
 Here we describe most of the usage of the toolkit to crate demonstrations of setplays to a team of simulated humanoid robots. 
 
-1. [Opening games logs](#markdown-header-Opening-games-logs)
-2. [Starting a new demonstration](#markdown-header-Starting-a-new-demonstration)
+1. [Opening games logs](#markdown-header-opening-games-logs)
+2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
