@@ -38,5 +38,15 @@ You can see this screen in the following image. You should click in the open fil
 
 ![Open a game file in RoboViz][RVizOpenFile]
 
+In the **Open** windows, you should navigate to the root of folders tree and select the games folder:
 
+![Games folder][RVizGamesFolder]
+
+This folder is inside the container you have downloaded to your computer and it contains 19 games extracted from *RoboCup 2021 Worldwide competition* and *Portuguese RoboCup Open 2021*.
+Each games is split into two files: one for the 1st half and other for the 2nd half. You can choose any file to open. We ask you to choose randomly files and not in sequence to avoid a bias in the dataset.
+If you have time for this, you can also plan to watch all 19 matches and recommend several demonstrations for each match. 
+
+![Choose a game log][RVizGameLog]
+
+When you choose one file and click in the **Open** button, the log will be loaded and the game will start playing automatically.
 
