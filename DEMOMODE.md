@@ -98,7 +98,15 @@ It is very important to position the game in the correct frame we want to use as
 
 ## Selecting players to a demonstration
 
-After positioning the game in the exact scene you want to use to start the setplay you will demonstrate, you need to choose which players will take part of your setplay. 
-You must choose players from the team you chose - we will call it *your team* - and you may choose players from the opponent team.
+After positioning the game in the exact scene you want to use to start the setplay you will demonstrate, you need to choose which players will take part in your setplay. 
+You must choose players from the team you chose - we will call it *your team* - and you may select players from the opponent team.
 
 ![Select players to new demo][RVizSelTeam]
+
+You can see in the image above an example of the screen where you select players. First, you choose players from your team: teammates. You can click on each player in the field to select it. Notice that the t-shirt number of each selected player is shown near the check box *Teammates selected*.
+While choosing teammates, you can click on the field (maybe you need to click twice, not double-click) to set focus to the RoboViz main windows and use camera control to view other players you want to select.
+When all Teammates are selected, check the *Teammates selected* checkbox.
+
+![Teammates Selected][RVizTeamSel]
+
+
