@@ -17,7 +17,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 [RVizOppSel]: /images/DemoMode-RViz8.png "Opponents selected"
 [RVizStartNew]: /images/DemoMode-RViz9.png "Starting a new demonstration"
 [RVizPlayBack]: /images/DemoMode-RViz10.png "Playing Backwards"
-[RVizPlayersMIRG]: /images/DemoMode-RViz11.png "Choosing players from other teams"
+
 
 [SPNewOffSP]: /images/DemoMode-SPlanner1.png "Creating a new Offensive Setplay"
 [SPOffMarkerMenu]: /images/DemoMode-SPlanner2.png "Behaviors for non-Ball Owners Players: Offensive Marker"
@@ -119,7 +119,25 @@ The procedure to select opponent players is similar. Click on each player on the
 
 ![Opponents Selected][RVizOppSel]
 
-Now you can click on the *Start demonstration* button to leave RoboViz and open **SPlanner** to create your setplay. Don't worry. When you finish your setplay, the toolkit will bring you back to RoboViz in the same scene you are now.
+Now you can click on the *Start demonstration* button to leave RoboViz and launch **SPlanner** to create your setplay. Don't worry. When you finish your setplay, the toolkit will bring you back to RoboViz in the same scene you are now.
 
 ## Creating an Offensive Setplay
 
+The toolkit will launch **SPlanner** in the *Create new setplay* window. You can see below that the first two fields are defined from the properties you have already selected from RoboViz: **Type** and **Situation**.
+You can not change these properties here. In this example, we have selected an Offensive setplay in RoboViz and a PlayOn playmode.
+On this screen, you set up the *Position* of the ball in the start scene of your setplay. The SPlanner collected the ball position from RoboViz, but you can tune your setplay to apply to more generic situations or more specific ones on this screen.
+
+![Setting up a new Offensive Setplay][SPNewOffSP]
+
+The options available to define the position are:
+
+* Point: this is the most restrictive option. When you check Point, the setplay will apply only on situations when the ball is located in a small area around the original ball position in the scene you captured from RoboViz.
+
+* Field: this is the most flexible option. When you check Field, the setplay will apply when the ball is located anywhere in the field.
+
+* Horizontal axis regions: you can choose some regions in the field considering the horizontal axis (X-axis):
+    * Our middle field: this region corresponds to half of the field. The defensive half of your team. This region can be split into three subregions:
+	    * Our back: This is the first subregion near to our goal post.
+		* Our middle: This is the intermediary subregion in the middle of Our middle field.
+		* Our front: This is the last subregion in Our middle field near to the line in the half of the field.
+	* Their middle field
