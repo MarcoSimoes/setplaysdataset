@@ -147,7 +147,7 @@ The options available to define the position are:
 		* Their middle: This is the subregion in the midle of Their middle field. 
 		* Their back: This is the subregion near to their goalpost. It is where your team scores goals.
 		
-![SPlanner Horizontal regions](/images/SPlanner-Regioes-Horizontais.png){width=50%}
+<div style="width:50%">![SPlanner Horizontal regions](/images/SPlanner-Regioes-Horizontais.png)</div>
 
 * Vertical axis regions: you can choose some regions in the field considering the vertical axis (Y-axis):
     * Left: This region corresponds to the left side of the field considering your team's goalie regular position. This region can be split into three subregions:
