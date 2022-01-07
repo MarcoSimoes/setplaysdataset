@@ -140,4 +140,7 @@ The options available to define the position are:
 	    * Our back: This is the first subregion near to our goal post.
 		* Our middle: This is the intermediary subregion in the middle of Our middle field.
 		* Our front: This is the last subregion in Our middle field near to the line in the half of the field.
-	* Their middle field
+	* Their middle field: this region corresponds the opponnents's defensive half of the field. This region can be split into thre subregions:
+	    * Their front: This is the subregion in Their middle field near to the line in the half of the field.
+		* Their middle: This is the subregion in the midle of Their middle field. 
+		* Their back: This is the subregion near to their goalpost. It is where your team scores goals.
