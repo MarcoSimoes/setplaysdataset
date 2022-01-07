@@ -6,6 +6,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
+    1. [Offensive Behaviors](#markdown-header-offensive-behaviors)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -165,3 +166,9 @@ The options available to define the position are:
 Both images above consider that your team is playing on the left side of the screen in the RoboViz window. If your team is playing on the right side of the screen,  these images are mirrored. The Our back subregion would be the rightest in the field, while the Far left would be at the bottom of the screen. So the best way to define precisely these subregions is thinking of your team's goalie standing up in the center of your goalpost, looking towards their goalpost. This is the reference to define all subregions.
 
 When choosing Horizontal and Vertical axis regions, the SPlanner will consider the intersection of your Horizontal regions selection and your Vertical regions selection. The result of this intersection is the area where your setplay can be used, considering the ball position in the initial scene. These position options allow defining both generic and specialized setplays. After selecting your position regions, click on the *Create* button to see the screen below.
+
+![OffensiveMarker][SPOffMarkerMenu]
+
+It is possible to see that we have selected the subregions: *Their back*, *Their middle*, *Left* and *Right*. The hatched area is the intersection of all selected subregions. 
+
+### Offensive Behaviors
