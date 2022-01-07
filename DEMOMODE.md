@@ -34,7 +34,8 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 [SPDefensiveMarker]: /images/DemoMode-SPlanner13.png "Defensive Marker"
 [SPBecOwn]: /images/DemoMode-SPlanner14.png "BecomeOwner behavior"
 
-[SPHorRegions]: /images/SPlanner-Regioes-Horizontais.png "SPlanner Horizontal regions"{height=200}
+[SPHorRegions]: /images/SPlanner-Regioes-Horizontais.png "SPlanner Horizontal regions"
+[SPVerRegions]: /images/SPlanner-Regioes-Verticais.png "SPlanner Vertical regions"
 
 ## Opening games logs
 
@@ -147,7 +148,7 @@ The options available to define the position are:
 		* Their middle: This is the subregion in the midle of Their middle field. 
 		* Their back: This is the subregion near to their goalpost. It is where your team scores goals.
 		
-![SPlanner Horizontal regions](/images/SPlanner-Regioes-Horizontais.png)
+![SPlanner Horizontal regions][SPHorRegions]
 
 * Vertical axis regions: you can choose some regions in the field considering the vertical axis (Y-axis):
     * Left: This region corresponds to the left side of the field considering your team's goalie regular position. This region can be split into three subregions:
@@ -158,3 +159,7 @@ The options available to define the position are:
 	    * Center right: This is the subregion near to the center of your goal post in the right side of the field.
 		* Middle right: This is the intermediary subregion in the right side of the field.
 		* Far right: This is the farthest subregion in the right side of the field. It is near the right side line.
+		
+![SPlanner Vertical regions][SPVerRegions]
+	
+	
