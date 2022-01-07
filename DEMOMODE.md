@@ -134,32 +134,34 @@ On this screen, you set up the *Position* of the ball in the start scene of your
 
 The options available to define the position are:
 
-* Point: this is the most restrictive option. When you check Point, the setplay will apply only on situations when the ball is located in a small area around the original ball position in the scene you captured from RoboViz.
+* Point: this is the most restrictive option. When you check Point, the setplay will apply only to situations when the ball is located in a small area around the original ball position in the scene you captured from RoboViz.
 
-* Field: this is the most flexible option. When you check Field, the setplay will apply when the ball is located anywhere in the field.
+* Field: this is the most flexible option. When you check the Field, the setplay will apply when the ball is located anywhere in the field.
 
-* Horizontal axis regions: you can choose some regions in the field considering the horizontal axis (X-axis):
+* Horizontal axis regions: you can choose some areas in the field considering the horizontal axis (X-axis):
     * Our middle field: this region corresponds to half of the field. The defensive half of your team. This region can be split into three subregions:
 	    * Our back: This is the first subregion near to our goal post.
 		* Our middle: This is the intermediary subregion in the middle of Our middle field.
-		* Our front: This is the last subregion in Our middle field near to the line in the half of the field.
-	* Their middle field: this region corresponds the opponnents's defensive half of the field. This region can be split into thre subregions:
-	    * Their front: This is the subregion in Their middle field near to the line in the half of the field.
-		* Their middle: This is the subregion in the midle of Their middle field. 
+		* Our front: This is the last subregion in Our middle field near the line in the half of the field.
+	* Their middle field: this region corresponds to the opponent's defensive half of the field. This region can be split into three subregions:
+	    * Their front: This is the subregion in Their middle field near the line in the half of the field.
+		* Their middle: This is the subregion in the middle of Their middle field. 
 		* Their back: This is the subregion near to their goalpost. It is where your team scores goals.
 		
 ![SPlanner Horizontal regions][SPHorRegions]
 
-* Vertical axis regions: you can choose some regions in the field considering the vertical axis (Y-axis):
-    * Left: This region corresponds to the left side of the field considering your team's goalie regular position. This region can be split into three subregions:
-	    * Far left: This is the farthest subregion in the left side of the field. It is near the left side line.
-		* Middle left: This is the intermediary subregion in the left side of the field.
-		* Center left: This is the subregion the near to the center of your goal post in the left side of the field.
-	* Right: This region corresponds to the right side of the field considering yourt team's goalie regular position. This region can be split into three subregions:
-	    * Center right: This is the subregion near to the center of your goal post in the right side of the field.
-		* Middle right: This is the intermediary subregion in the right side of the field.
-		* Far right: This is the farthest subregion in the right side of the field. It is near the right side line.
+* Vertical axis regions: you can choose some areas in the field considering the vertical axis (Y-axis):
+    * Left: This region corresponds to the left side of the field, considering your team's goalie regular position. This region can be split into three subregions:
+	    * Far left: This is the farthest subregion on the left side of the field. It is near the left sideline.
+		* Middle left: This is the intermediary subregion on the left side of the field.
+		* Center left: This is the subregion near to the center of your goal post on the left side of the field.
+	* Right: This region corresponds to the right side of the field considering your team's goalie regular position. This region can be split into three subregions:
+	    * Center right: This is the subregion near to the center of your goal post on the right side of the field.
+		* Middle right: This is the intermediary subregion on the right side of the field.
+		* Far right: This is the farthest subregion on the right side of the field. It is near the right sideline.
 		
 ![SPlanner Vertical regions][SPVerRegions]
 	
-	
+Both images above consider that your team is playing on the left side of the screen in the RoboViz window. If your team is playing on the right side of the screen,  these images are mirrored. The Our back subregion would be the rightest in the field, while the Far left would be at the bottom of the screen. So the best way to define precisely these subregions is thinking of your team's goalie standing up in the center of your goalpost, looking towards their goalpost. This is the reference to define all subregions.
+
+When choosing Horizontal and Vertical axis regions, the SPlanner will consider the intersection of your Horizontal regions selection and your Vertical regions selection. The result of this intersection is the area where your setplay can be used, considering the ball position in the initial scene. These position options allow defining both generic and specialized setplays. After selecting your position regions, click on the *Create* button to see the screen below.
