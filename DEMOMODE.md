@@ -34,6 +34,8 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 [SPDefensiveMarker]: /images/DemoMode-SPlanner13.png "Defensive Marker"
 [SPBecOwn]: /images/DemoMode-SPlanner14.png "BecomeOwner behavior"
 
+[SPHorRegions]: /images/SPlanner-Regioes-Horizontais.png "SPlanner Horizontal regions"
+
 ## Opening games logs
 
 When you run the container with this toolkit, as described in [README.md](/README.md),  you will see the initial screen of [RoboViz](https://github.com/magmaOffenburg/RoboViz) running in demo mode.
@@ -144,3 +146,15 @@ The options available to define the position are:
 	    * Their front: This is the subregion in Their middle field near to the line in the half of the field.
 		* Their middle: This is the subregion in the midle of Their middle field. 
 		* Their back: This is the subregion near to their goalpost. It is where your team scores goals.
+		
+![SPlanner Horizontal regions][SPHorRegions]
+
+* Vertical axis regions: you can choose some regions in the field considering the vertical axis (Y-axis):
+    * Left: This region corresponds to the left side of the field considering your team's goalie regular position. This region can be split into three subregions:
+	    * Far left: This is the farthest subregion in the left side of the field. It is near the left side line.
+		* Middle left: This is the intermediary subregion in the left side of the field.
+		* Center left: This is the subregion the near to the center of your goal post in the left side of the field.
+	* Right: This region corresponds to the right side of the field considering yourt team's goalie regular position. This region can be split into three subregions:
+	    * Center right: This is the subregion near to the center of your goal post in the right side of the field.
+		* Middle right: This is the intermediary subregion in the right side of the field.
+		* Far right: This is the farthest subregion in the right side of the field. It is near the right side line.
