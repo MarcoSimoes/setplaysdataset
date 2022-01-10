@@ -7,6 +7,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
     1. [Offensive Marker](#markdown-header-offensive-marker)
+    2. [Non-Ball Owner Players Offensive Behaviors][#markdown-non-ball-owner-players-offensive-behaviors]
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -185,12 +186,26 @@ Now you will see the image below, and you should select the tab named *Step posi
 
 You can select one of the following options:
 
-* Relative to ball: if you want the offensiver marker to block the path of the chosen opponent to the ball.
+* Relative to the ball: if you want the offensive marker to block the path of the chosen opponent to the ball.
 
-* Relative to goalpost: if you want the offensive marker to block the path of the chosen opponent to one of the goalposts. In this case you should also select *Goal Post Our* or *Goal Post Their* to define what goalpost is your reference.
+* Relative to goalpost: if you want the offensive marker to block the path of the chosen opponent to one of the goalposts. In this case, you should also select *Goal Post Our* or *Goal Post Their* to define what goalpost is your reference.
 
-* Relative to specific point: if you want the offensive marker to block the path of the chosen opponent to a specific point on the field. In this case, you should inform the *(x,y)* coordinantes of the specific point.
+* Relative to a specific point: if you want the offensive marker to block the path of the chosen opponent to a particular point on the field. In this case, you should inform the *(x,y)* coordinates of the specific point.
 
-* Relative to player: if you want the offensive marker to block the path of the chosen opponent to a particular teammate. In this case, you should select the specific teammate to be used as reference.
+* Relative to a player: if you want the offensive marker to block the path of the chosen opponent to a particular teammate. In this case, you should select the specific teammate used as a reference.
 
-When you are done, click on the button **Save**. By defalt, the *Relative to ball* option is selected.
+When you are done, click on the button **Save**. By default, the *Relative to ball* option is selected.
+
+![Offensive Marker Arrow][SPOffMarkerSeta]
+
+The image above shows a brown arrow that indicates the estimated position where the Offensive Marker should go. This position is the medium point between the marked opponent and the object or point chosen as reference.
+This arrow may not be so evident in some situations, but the behavior is ok. 
+
+### Non-Ball Owner Players Offensive Behaviors
+
+The remaining possible behaviors for non-ball owner players are:
+
+* **Run - Straight**: When a player executes this behavior, he is expected to run to a particular region on the field as fast as he can without having to worry about avoiding obstacles. This behavior is supposed to be used for long sprints that make some players appear in some parts of the field to receive a pass, for example, and surprise the opponent team. It may be used when you are sure that the player has a free path in front of him and will not collide with teammates or opponents.
+
+
+![Offensive Behaviors][SPBehNonBO]
