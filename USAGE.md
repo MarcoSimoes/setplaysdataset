@@ -7,7 +7,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
     1. [Offensive Marker](#markdown-header-offensive-marker)
-    2. [Non-Ball Owner Players Offensive Behaviors][#markdown-non-ball-owner-players-offensive-behaviors]
+    2. [Non-Ball Owner Players Offensive Behaviors][#markdown-header-non-ball-owner-players-offensive-behaviors]
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -209,3 +209,9 @@ The remaining possible behaviors for non-ball owner players are:
 
 
 ![Offensive Behaviors][SPBehNonBO]
+
+* **Run - Path planned**: The player must avoid colliding with teammates and opponents when executing this behavior. The player can not use its highest possible speed and should carefully plan his path to the target region. You may use this behavior to move short distances or when the path is crowded with other players.
+
+* **Wait**: This behavior means staying where you are. The player will remain in his current position or some strategic position. 
+
+An extra option highlighted in the image above is the *Change position ...*. This option is not a behavior. You can use it in any step to change the position of a particular player. It is useful when SPlanner does not estimate the position of a player in the following step as you think. So, you can adjust the position yourself. 
