@@ -110,7 +110,7 @@ It is very important to position the game in the correct frame we want to use as
 
 ## Selecting players to a demonstration
 
-After positioning the game in the exact scene you want to use to start the setplay you will demonstrate, you need to choose which players will take part in your setplay. 
+After positioning the game in the exact scene you want to use to start the setplSPSaveSPay you will demonstrate, you need to choose which players will take part in your setplay. 
 You must choose players from the team you chose - we will call it *your team* - and you may select players from the opponent team.
 
 ![Select players to new demo][RVizSelTeam]
@@ -269,3 +269,19 @@ The other behaviors available only in defensive setplays are:
 ![Defensive Marker Behavior][SPDefensiveMarker]
 
 The image above shows an example where several teammates perform *Defensive Marker* blocking all dribble and pass options for the opponent team. Players number 1 and 3 executes *Run - Path planned* going towards our goalpost to protect it better. 
+
+* **Become Owner**: This behavior is the main goal in a defensive setplay. Use it when you can position a player very near the ball owner in good condition to get the ball possession. If the player from your team can get the ball possession, the setplay will finish with success. Below, you can see a situation where player number 6 can execute a *Become Owner* behavior.
+
+![Become Owner Behavior][SPBecOwn]
+
+## Exporting a Setplay to a File
+
+When you finish your setplay, you can save it using the menu *File*->*Export Setplay* or type the hotkey ```F3```:
+
+![Exporting a Setplay][SPSaveSP]
+
+Navigate in the folder tree and locate the *setplays* folder:
+
+![Setplays Folder][SPSetpFolder]
+
+Give a name to your file and save it.
