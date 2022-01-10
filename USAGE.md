@@ -6,7 +6,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
-    1. [Offensive Behaviors](#markdown-header-offensive-behaviors)
+    1. [Offensive Marker](#markdown-header-offensive-marker)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -23,7 +23,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 [SPNewOffSP]: /images/DemoMode-SPlanner1.png "Creating a new Offensive Setplay"
 [SPOffMarkerMenu]: /images/DemoMode-SPlanner2.png "Behaviors for non-Ball Owners Players: Offensive Marker"
 [SPOffMarkerSeta]: /images/DemoMode-SPlanner3.png "Arrow pointing to target of Offensive Marker"
-[SPOoffMarkerOptions]: /images/DemoMode-SPlanner4.png "Options for Offensive Marker"
+[SPOffMarkerOptions]: /images/DemoMode-SPlanner4.png "Options for Offensive Marker"
 [SPBehNonBO]: /images/DemoMode-SPlanner5.png "Other Behaviors for non-Ball Owners Players"
 [SPBehBO]: /images/DemoMode-SPlanner6.png "Behaviors for the Ball Owner Player"
 [SPGraphName]: /images/DemoMode-SPlanner7.png "Setplay Graph and Name"
@@ -169,6 +169,28 @@ When choosing Horizontal and Vertical axis regions, the SPlanner will consider t
 
 ![OffensiveMarker][SPOffMarkerMenu]
 
-It is possible to see that we have selected the subregions: *Their back*, *Their middle*, *Left* and *Right*. The hatched area is the intersection of all selected subregions. 
+It is possible to see that we have selected the subregions: *Their back*, *Their middle*, *Left*, and *Right*. The hatched area is the intersection of all selected subregions.
+The image also shows that the SPlanner captured the exact scene when you started your demonstration in the RoboViz. The team you have chosen as
+*your team* is now using white t-shirts, and the opponent team uses blue t-shirts. *Your team* is always defending the left side of the field in SPlanner.
 
-### Offensive Behaviors
+### Offensive Marker
+
+To start your demonstration, you need to define what behaviors you want each of your team's players to execute in step 0. To do this, you can right-click on a teammate, and you
+will see a menu like the one in the image above. The first behavior you can see for a non-ball owner player is the **offensive marker**. 
+The offensive marker is a blocking behavior. We expect the player performing offensive marker to block the path of a specific opponent relative to the ball, or a particular teammate, or one of the goalposts, or a particular point on the field. 
+When you select an offensive marker, one brown arrow will appear, and you should choose the opponent you want to mark and left-click on him. 
+Now you will see the image below, and you should select the tab named *Step position*.
+
+![Offensive Marker Options][SPOffMarkerOptions]
+
+You can select one of the following options:
+
+* Relative to ball: if you want the offensiver marker to block the path of the chosen opponent to the ball.
+
+* Relative to goalpost: if you want the offensive marker to block the path of the chosen opponent to one of the goalposts. In this case you should also select *Goal Post Our* or *Goal Post Their* to define what goalpost is your reference.
+
+* Relative to specific point: if you want the offensive marker to block the path of the chosen opponent to a specific point on the field. In this case, you should inform the *(x,y)* coordinantes of the specific point.
+
+* Relative to player: if you want the offensive marker to block the path of the chosen opponent to a particular teammate. In this case, you should select the specific teammate to be used as reference.
+
+When you are done, click on the button **Save**. By defalt, the *Relative to ball* option is selected.
