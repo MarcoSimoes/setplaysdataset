@@ -7,7 +7,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 3. [Selecting players to a demonstration](#markdown-header-selecting-players-to-a-demonstration)
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
     1. [Offensive Marker](#markdown-header-offensive-marker)
-    2. [Non-Ball Owner Players Offensive Behaviors][#markdown-header-non-ball-owner-players-offensive-behaviors]
+    2. [Non-Ball Owner Players Offensive Behaviors](#markdown-header-non-ball-owner-players-offensive-behaviors)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
