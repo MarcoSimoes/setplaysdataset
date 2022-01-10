@@ -10,6 +10,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
     2. [Non-Ball Owner Players Offensive Behaviors](#markdown-header-non-ball-owner-players-offensive-behaviors)
     3. [Ball Owner Players Offensive Behaviors](#markdown-header-ball-owner-players-offensive-behaviors)
 5. [Creating a Defensive Setplay](#markdown-header-creating-a-defensive-setplay)
+6. [Exporting a Setplay to a File](#markdown-header-exporting-a-setplay-to-a-file)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -284,4 +285,14 @@ Navigate in the folder tree and locate the *setplays* folder:
 
 ![Setplays Folder][SPSetpFolder]
 
-Give a name to your file and save it.
+Give a name to your file and save it. **It is imperative to save your setplays on this folder!**. The *setplays* folder is mapped to a local folder with the same name in your host computer. You can only retrieve the setplays you save if you put them in this folder. Don't save them elsewhere.
+
+When you are done, close the SPlanner window, and you will be back to the RoboViz window in the same situation you used to start your demonstration. At this point, you have finished your first demonstration. You can continue watching the game and creating other demonstrations for any team up to the end of the half-game. You can open another game log and continue generating demos in the *setplays* folder when the game is finished.
+
+When you want to stop creating demos, you can close the main RoboViz window, and you will be back to the command prompt where you ran the *run.sh* script.
+
+Type:
+
+> ls setplays
+
+and you will see all the setplays you crated as demos.
