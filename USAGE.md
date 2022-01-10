@@ -246,6 +246,7 @@ You can also see on the right side of the screen a small menu you get when you r
 
 It is widespread to finish offensive setplays using a *Shoot*, but it is not mandatory. You can notice that all setplays have a name. When you export the setplay to a file, this name is used as the file name by default. You can customize the name of your setplay as you want.
 
-* **Dribble**: 
+* **Dribble**: When you want a player to move the ball to a different field region and avoid losing possession during his path,  you use the *Dribble* behavior. The *Dribble* is the unique option to make a ball owner move on the field. You can left-click anywhere in the target subregion, and the behavior is created.
 
-* **Hold**: 
+* **Hold**: A player executing *Hold* will do his best to avoid losing ball possession, but he will not move the ball to a particular region. He will only hold the ball in the same area where he is in the current step.
+
