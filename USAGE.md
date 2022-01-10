@@ -215,3 +215,32 @@ The remaining possible behaviors for non-ball owner players are:
 * **Wait**: This behavior means staying where you are. The player will remain in his current position or some strategic position. 
 
 An extra option highlighted in the image above is the *Change position ...*. This option is not a behavior. You can use it in any step to change the position of a particular player. It is useful when SPlanner does not estimate the position of a player in the following step as you think. So, you can adjust the position yourself. 
+
+### Ball Owner Players Offensive Behaviors
+
+You see a different menu when you right-click on your teammate who owns the ball possession. The following image show this menu.
+
+![Ball Owner Offensive Behaviors][SPBehBO]
+
+The available behaviors are:
+
+* **Pass to best player**: The player executing this behavior should decide who is the best teammate to receive a pass in the current situation. When you use this behavior, you should create a multi-flow setplay. First, you will make the green arrow point to one of the possible teammates to receive a pass. Them you plan the behaviors you want the other teammates to perform when the chosen teammate receives a pass, as you can see in the following image. Player number 4 will perform a Pass to Best Player. If he chooses teammate number 10 to receive the pass, the other teammates will execute offensive marker and other behaviors as shown below.
+
+![Using Pass to Best Player to Create a Multi-Flow Setplay][SPMultiFlow]
+
+After that, you need to give other pass options to player number 4. So, right-click in the setplay graph on the left side of the screen on the current step (in this case, it is step 0) and choose *Add transition* -> *Create a new Step*. A new step 3 is created, and a new transition from step 0 to step 3 is set. You can now make another *Pass to Best Player* from player number 4 to teammate number 11 and define the behaviors for the other teammates when the number 11 is chosen to receive a pass. Repeat this procedure to create another transition from step 0 to a new step 4 and define a *Pass to Best Player* to teammate number 9. Now you get a screen like this:
+
+![A Multi-flow Setplay Graph][SPMultiFlowGraph]
+
+Look at the Setplay Graph. You can see three transitions from step 0 to steps 1, 3, and 4. When you click on each transition, you can see a different play resulting from the player number 4 choice for the pass receiver. The image above shows the play resulted from choosing teammate number 9 to receive a pass. This behavior is excellent for creating sophisticated multi-flow setplays.
+You can also see on the right side of the screen a small menu you get when you right-click on an opponent. The unique behavior available in offensive setplays is the *Run*. You can use it to estimate some opponents' movements during your setplay. Using opponents' behaviors estimation is helpful to provide more realistic setplays. You also change the position of opponents on each step.
+
+* **Pass Forward to ...**:
+
+* **Pass**:
+
+* **Shoot**:
+
+* **Dribble**: 
+
+* **Hold**: 
