@@ -9,6 +9,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
     1. [Offensive Marker](#markdown-header-offensive-marker)
     2. [Non-Ball Owner Players Offensive Behaviors](#markdown-header-non-ball-owner-players-offensive-behaviors)
     3. [Ball Owner Players Offensive Behaviors](#markdown-header-ball-owner-players-offensive-behaviors)
+5. [Creating a Defensive Setplay](#markdown-header-creating-a-defensive-setplay)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -117,6 +118,7 @@ You must choose players from the team you chose - we will call it *your team* - 
 You can see in the image above an example of the screen where you select players. First, you choose players from your team: teammates. You can click on each player in the field to select it. Notice that the t-shirt number of each selected player is shown near the check box *Teammates selected*.
 While choosing teammates, you can click on the field (maybe you need to click twice, not double-click) to set focus to the RoboViz main windows and use camera control to view other players you want to select.
 When all Teammates are selected, check the *Teammates selected* checkbox.
+A player executing *Hold* will do his best to avoid losing ball possession, but he will not move the ball to a particular region. He will only hold the ball in the same area where he is in the current step.
 
 ![Teammates Selected][RVizTeamSel]
 
@@ -205,6 +207,7 @@ This arrow may not be so evident in some situations, but the behavior is ok.
 ### Non-Ball Owner Players Offensive Behaviors
 
 The remaining possible behaviors for non-ball owner players are:
+A player executing *Hold* will do his best to avoid losing ball possession, but he will not move the ball to a particular region. He will only hold the ball in the same area where he is in the current step.
 
 * **Run - Straight**: When a player executes this behavior, he is expected to run to a particular region on the field as fast as he can without having to worry about avoiding obstacles. This behavior is supposed to be used for long sprints that make some players appear in some parts of the field to receive a pass, for example, and surprise the opponent team. It may be used when you are sure that the player has a free path in front of him and will not collide with teammates or opponents.
 
@@ -227,7 +230,8 @@ The available behaviors are:
 
 * **Pass to best player**: The player executing this behavior should decide who is the best teammate to receive a pass in the current situation. When you use this behavior, you should create a multi-flow setplay. First, you will make the green arrow point to one of the possible teammates to receive a pass. Them you plan the behaviors you want the other teammates to perform when the chosen teammate receives a pass, as you can see in the following image. Player number 4 will perform a Pass to Best Player. If he chooses teammate number 10 to receive the pass, the other teammates will execute offensive marker and other behaviors as shown below.
 
-![Using Pass to Best Player to Create a Multi-Flow Setplay][SPMultiFlow]
+![Using Pass to Best Player to Create a Multi-Flow Setplay][SPMultiFlow]A player executing *Hold* will do his best to avoid losing ball possession, but he will not move the ball to a particular region. He will only hold the ball in the same area where he is in the current step.
+
 
 After that, you need to give other pass options to player number 4. So, right-click in the setplay graph on the left side of the screen on the current step (in this case, it is step 0) and choose *Add transition* -> *Create a new Step*. A new step 3 is created, and a new transition from step 0 to step 3 is set. You can now make another *Pass to Best Player* from player number 4 to teammate number 11 and define the behaviors for the other teammates when the number 11 is chosen to receive a pass. Repeat this procedure to create another transition from step 0 to a new step 4 and define a *Pass to Best Player* to teammate number 9. Now you get a screen like this:
 
@@ -250,3 +254,18 @@ It is widespread to finish offensive setplays using a *Shoot*, but it is not man
 
 * **Hold**: A player executing *Hold* will do his best to avoid losing ball possession, but he will not move the ball to a particular region. He will only hold the ball in the same area where he is in the current step.
 
+## Creating a Defensive Setplay
+
+You can create a defensive setplay like you have created offensive setplays. While you define the start demonstration properties in RoboViz, you should choose *Defensive* as the type of the setplay. Remember to use this option when your team does not have the ball possession. 
+When SPlanner is launched, you can see that the ball owner is one player from the opponent team (blue team). When you right-click on a player from your team, you will see the following menu:
+
+![Defensive Behaviors][SPDefBeh]
+
+Some options in this menu(e.g., *Run - Straight*, *Run - Path planned*) were described in the offensive setplays explanation and performed similarly for defensive setplays.
+The other behaviors available only in defensive setplays are:
+
+* **Defensive Marker**: This behavior makes the player position somewhere between the target opponent and your teams' goal post. The idea is to mark the opponent turning harder to receive a pass successfully. Suppose the selected opponent is the ball owner. In that case, this behavior will make the player approach the target opponent, trying to block any dribble or kick option and position to get the ball possession.
+
+![Defensive Marker Behavior][SPDefensiveMarker]
+
+The image above shows an example where several teammates perform *Defensive Marker* blocking all dribble and pass options for the opponent team. Players number 1 and 3 executes *Run - Path planned* going towards our goalpost to protect it better. 
