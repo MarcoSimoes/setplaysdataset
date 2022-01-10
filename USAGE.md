@@ -8,6 +8,7 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
 4. [Creating an Offensive Setplay](#markdown-header-creating-an-offensive-setplay)
     1. [Offensive Marker](#markdown-header-offensive-marker)
     2. [Non-Ball Owner Players Offensive Behaviors](#markdown-header-non-ball-owner-players-offensive-behaviors)
+    3. [Ball Owner Players Offensive Behaviors](#markdown-header-ball-owner-players-offensive-behaviors)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -235,11 +236,15 @@ After that, you need to give other pass options to player number 4. So, right-cl
 Look at the Setplay Graph. You can see three transitions from step 0 to steps 1, 3, and 4. When you click on each transition, you can see a different play resulting from the player number 4 choice for the pass receiver. The image above shows the play resulted from choosing teammate number 9 to receive a pass. This behavior is excellent for creating sophisticated multi-flow setplays.
 You can also see on the right side of the screen a small menu you get when you right-click on an opponent. The unique behavior available in offensive setplays is the *Run*. You can use it to estimate some opponents' movements during your setplay. Using opponents' behaviors estimation is helpful to provide more realistic setplays. You also change the position of opponents on each step.
 
-* **Pass Forward to ...**:
+* **Pass Forward to ...**: A more straightforward way to create setplays with passes is using *Pass Forward to...*. This behavior does not require a multi-flow setplay (but you can use it if you want). You choose the player to receive the pass and point the arrow to a position  (generally in front of the receiver). Two behaviors are generated: the pass and an intercept behavior (defined as a yellow arrow), making the receiver start moving to the receiving point.
 
-* **Pass**:
+* **Pass**: Another option for performing passes is defining a teammate as a pass target, and the passer will achieve a pass towards the region where the receiver is in the current step. Just point to the receiver, and the *Pass* is ok.
 
-* **Shoot**:
+* **Shoot**: The *Shoot* means kick to goal. When you want a player to score a goal, use *Shoot*. You will see a red beam coming from the player performing the shoot towards the opponent's goal. The image below shows a complete setplay using a *Shoot* in the last step.
+
+![Finishing a setplay with Shoot][SPGraphName]
+
+It is widespread to finish offensive setplays using a *Shoot*, but it is not mandatory. You can notice that all setplays have a name. When you export the setplay to a file, this name is used as the file name by default. You can customize the name of your setplay as you want.
 
 * **Dribble**: 
 
