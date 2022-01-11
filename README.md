@@ -44,7 +44,8 @@ or
 > ./setup.sh mesa
 
 
-If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument.
+If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument. **If you do not use a Debian-based Linux distribution, edit setup.sh and replace *apt-get* with your command-line package manager (e.g., yum, zypper, etc.)**
+
 
 * If you are trying in a Windows 10 or + without an NVIDIA Graphics card, run *setup.cmd* in the Windows Powershell:
 
