@@ -35,6 +35,14 @@ For other distributions, replace *apt-get* with your command-line package manage
 
 ### Setting up the toolkit ###
 
+* First, clone this repository:
+
+> git clone https://bitbucket.org/bahiart3d/setplaysdataset.git
+
+* Change your current folder to the repository:
+
+> cd setplaysdataset
+
 * If you are using a Debian-based linux distribution, just run *setup.sh*:
 
 > ./setup.sh nvidia
