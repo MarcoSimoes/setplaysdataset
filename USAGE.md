@@ -11,6 +11,8 @@ Here we describe most of the usage of the toolkit to crate demonstrations of set
     3. [Ball Owner Players Offensive Behaviors](#markdown-header-ball-owner-players-offensive-behaviors)
 5. [Creating a Defensive Setplay](#markdown-header-creating-a-defensive-setplay)
 6. [Exporting a Setplay to a File](#markdown-header-exporting-a-setplay-to-a-file)
+7. [Sending your Setplays to the central Demonstration dataset](#markdown-header-sending-your-setplays-to-the-central-demonstration-dataset)
+8. [Suppport and Video tutorials](#markdown-header-support-and-video-tutorials)
 
 [RVizOpenFile]: /images/DemoMode-RViz1.png "Open a Game"
 [RVizGamesFolder]: /images/DemoMode-RViz2.png "Games Folder"
@@ -241,7 +243,7 @@ After that, you need to give other pass options to player number 4. So, right-cl
 Look at the Setplay Graph. You can see three transitions from step 0 to steps 1, 3, and 4. When you click on each transition, you can see a different play resulting from the player number 4 choice for the pass receiver. The image above shows the play resulted from choosing teammate number 9 to receive a pass. This behavior is excellent for creating sophisticated multi-flow setplays.
 You can also see on the right side of the screen a small menu you get when you right-click on an opponent. The unique behavior available in offensive setplays is the *Run*. You can use it to estimate some opponents' movements during your setplay. Using opponents' behaviors estimation is helpful to provide more realistic setplays. You also change the position of opponents on each step.
 
-* **Pass Forward to ...**: A more straightforward way to create setplays with passes is using *Pass Forward to...*. This behavior does not require a multi-flow setplay (but you can use it if you want). You choose the player to receive the pass and point the arrow to a position  (generally in front of the receiver). Two behaviors are generated: the pass and an intercept behavior (defined as a yellow arrow), making the receiver start moving to the receiving point.
+* **Pass Forward to ...**: A more straightforward way to create setplays with passSending your Setplays to the central Demonstration datasetes is using *Pass Forward to...*. This behavior does not require a multi-flow setplay (but you can use it if you want). You choose the player to receive the pass and point the arrow to a position  (generally in front of the receiver). Two behaviors are generated: the pass and an intercept behavior (defined as a yellow arrow), making the receiver start moving to the receiving point.
 
 * **Pass**: Another option for performing passes is defining a teammate as a pass target, and the passer will achieve a pass towards the region where the receiver is in the current step. Just point to the receiver, and the *Pass* is ok.
 
@@ -263,7 +265,7 @@ When SPlanner is launched, you can see that the ball owner is one player from th
 ![Defensive Behaviors][SPDefBeh]
 
 Some options in this menu(e.g., *Run - Straight*, *Run - Path planned*) were described in the offensive setplays explanation and performed similarly for defensive setplays.
-The other behaviors available only in defensive setplays are:
+The other behaviors available only in defensive setplays are:Sending your Setplays to the central Demonstration dataset
 
 * **Defensive Marker**: This behavior makes the player position somewhere between the target opponent and your teams' goal post. The idea is to mark the opponent turning harder to receive a pass successfully. Suppose the selected opponent is the ball owner. In that case, this behavior will make the player approach the target opponent, trying to block any dribble or kick option and position to get the ball possession.
 
@@ -295,4 +297,19 @@ Type:
 
 > ls setplays
 
-and you will see all the setplays you crated as demos.
+and you will see all the setplays you created as demos.
+
+## Sending your Setplays to the central Demonstration dataset
+
+The last step of your contribution to this research project is sending the demos to the central dataset. You can do this by compressing all your setplays (*.conf* files) in one single *.zip* file. See below an example that was compressed into a *mydemos.zip* file.
+
+![Compressing Setplays](/images/CompressFiles.png)
+
+After compression, you can use our [**Submission Form**](https://formfaca.de/sm/fB2AVqE8m) to send us your *.zip* file.
+
+Thank you very much for your contribution to this project.
+
+## Support and Video tutorials
+
+If you need further assistance using this toolkit, please check our [**Video Tutorial**](https://) or send us an email asking for support: *teambahiart at gmail.com*.
+
