@@ -48,7 +48,7 @@ If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument.
 
 * If you are trying in a Windows 10 or + without an NVIDIA Graphics card, run *setup.cmd* in the Windows Powershell:
 
->> setup.cmd
+> setup.cmd
 
 We could not correctly set up NVidia in the Docker Desktop setup. But you can try it.
 
