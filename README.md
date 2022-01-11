@@ -24,7 +24,7 @@ See [USAGE.md](/USAGE.md) to learn how to use this tool kit and send your contri
 
 > $ sudo apt-get update
 >
->> $ sudo apt-get install -y docker.io
+> $ sudo apt-get install -y docker.io
 >
 > $ sudo gpasswd -a *{user-name}* docker
 
