@@ -1,8 +1,17 @@
 # README #
 
+1. [Requirements](#markdown-header-requirements)
+2. [Installing Docker in a Debian-based Linux distribution](#markdown-header-installing-docker-in-a-debian-based-linux-distribution)
+3. [Setting up the toolkit](#markdown-header-setting-up-the-toolkit)
+4. [Running the toolkit](#markdown-header-running-the-toolkit)
+5. [How can I create and send my demos to this project?](/USAGE.md)
+
+
 ### What is this repository for? ###
 
-* This repository contains scripts to set up and run the *Docker Containers* which launch **BahiaRT's Setplays Learning from Demonstration Toolkit**. The toolkit is a set of a fork of RoboViz 1.6.0 modified to support the Demonstration Mode and a Fork of Strategy Planner (SPlanner) to support Demonstration Mode and new behaviors and features.
+This repository contains scripts to set up and run the *Docker Containers* which launch **BahiaRT's Setplays Learning from Demonstration Toolkit**. The toolkit is a set of a fork of RoboViz 1.6.0 modified to support the Demonstration Mode and a Fork of Strategy Planner (SPlanner) to support Demonstration Mode and new behaviors and features.
+
+See [USAGE.md](/USAGE.md) to learn how to use this tool kit and send your contribution to this research project.
 
 ### Requirements ###
 
@@ -13,23 +22,26 @@
 
 ### Installing Docker in a Debian-based Linux distribution ###
 
->> $ sudo apt-get update
->>
+> $ sudo apt-get update
+>
 >> $ sudo apt-get install -y docker.io
->>
->> $ sudo gpasswd -a *{user-name}* docker
+>
+> $ sudo gpasswd -a *{user-name}* docker
 
 **Replace *{user-name}* by your user name in the Linux system.**
+
+For other distributions, replace *apt-get* with your command-line package manager(e.g., yum, zypper).
+
 
 ### Setting up the toolkit ###
 
 * If you are using a Debian-based linux distribution, just run *setup.sh*:
 
->> ./setup.sh nvidia
+> ./setup.sh nvidia
 
 or
 
->> ./setup.sh mesa
+> ./setup.sh mesa
 
 
 If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument.
@@ -38,12 +50,15 @@ If you use NVIDIA choose the first option. Otherwise use *mesa* as the argument.
 
 >> setup.cmd
 
+We could not correctly set up NVidia in the Docker Desktop setup. But you can try it.
+
+The setup can take several minutes depending on your internet bandwidth. But, after setup, it is very fast to run the toolkit.
 
 ### Running the toolkit ###
 
 * For systems using NVIDIA drivers:
->> ./run.sh nvidia
+> ./run.sh nvidia
 * For other systems:
->>./run.sh mesa
+>./run.sh mesa
 * For Windows systems without NVIDIA Graphics Cards, run in the Powershell:
->> run.cmd
+> run.cmd
