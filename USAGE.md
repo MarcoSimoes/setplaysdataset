@@ -311,5 +311,5 @@ Thank you very much for your contribution to this project.
 
 ## Support and Video tutorials
 
-If you need further assistance using this toolkit, please check our [**Video Tutorial**](https://) or send us an email asking for support: *teambahiart at gmail.com*.
+If you need further assistance using this toolkit, please check our [**Video Tutorial**](https://youtu.be/h_s8rA2IS88) or send us an email asking for support: *teambahiart at gmail.com*.
 
