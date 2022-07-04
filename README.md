@@ -1,5 +1,7 @@
 # README #
 
+If you prefer, you can watch this [video tutorial](https://youtu.be/h_s8rA2IS88).
+
 1. [Requirements](#markdown-header-requirements)
 2. [Installing Docker in a Debian-based Linux distribution](#markdown-header-installing-docker-in-a-debian-based-linux-distribution)
 3. [Setting up the toolkit](#markdown-header-setting-up-the-toolkit)
@@ -34,6 +36,14 @@ For other distributions, replace *apt-get* with your command-line package manage
 
 
 ### Setting up the toolkit ###
+
+* First, clone this repository:
+
+> git clone https://bitbucket.org/bahiart3d/setplaysdataset.git
+
+* Change your current folder to the repository:
+
+> cd setplaysdataset
 
 * If you are using a Debian-based linux distribution, just run *setup.sh*:
 

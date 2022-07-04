@@ -1,6 +1,7 @@
 # BahiaRT's Setplays Learning from Demonstration Toolkit
 
 Here we describe most of the usage of the toolkit to crate demonstrations of setplays to a team of simulated humanoid robots. 
+If you prefer, you can watch this [video tutorial](https://youtu.be/h_s8rA2IS88).
 
 1. [Opening games logs](#markdown-header-opening-games-logs)
 2. [Starting a new demonstration](#markdown-header-starting-a-new-demonstration)
@@ -311,5 +312,5 @@ Thank you very much for your contribution to this project.
 
 ## Support and Video tutorials
 
-If you need further assistance using this toolkit, please check our [**Video Tutorial**](https://) or send us an email asking for support: *teambahiart at gmail.com*.
+If you need further assistance using this toolkit, please check our [**Video Tutorial**](https://youtu.be/h_s8rA2IS88) or send us an email asking for support: *teambahiart at gmail.com*.
 
